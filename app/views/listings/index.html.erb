@@ -1,0 +1,9 @@
+<h1>Pop Party!</h1>
+
+<ul> 
+<% for listing in @listings   %> 
+    <li> 
+    <%= listing.title %> - <%= number_to_currency(listing.price) %>  
+     </li>
+<% end %>
+</ul>
