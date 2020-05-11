@@ -1,12 +1,11 @@
 <h1>Pop Party!</h1>
 
-<%= link_to"Sell Pops", new_listing_path%>
+<%= link_to"Sell Pop", new_listing_path%>
 
 <ul> 
 <% for listing in @listings   %> 
     <li> 
-    <%= listing.title %> - <%= number_to_currency(listing.price) %>  
-   
-    </li>
+        <%= link_to "#{listing.title} - #{number_to_currency(listing.price)}", listing_path(listing.id)%>
+      </li>
 <% end %>
 </ul>
