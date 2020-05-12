@@ -54,5 +54,11 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #user authorization
 gem "devise", "~> 4.7"
-
+#amazon s3
 gem "aws-sdk-s3", "~> 1.64"
+#bootstrap 4
+gem 'bootstrap'
+
+gem 'sprockets'
+gem 'sprockets-rails'
+gem 'jquery-rails'
