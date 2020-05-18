@@ -15,7 +15,7 @@ class ListingsController < ApplicationController
         else
             redirect_to listings_path 
         end 
-end 
+    end
 
     def edit
          @listing = current_user.listings.find_by_id(params["id"]) 
@@ -53,7 +53,13 @@ end
 
     end 
   
+    def show 
+        @listing = Listing.find(params["id"])
+    end 
 
+    def show_favourites
+        @favourite_exists = Favourite.where(listings: @listings, user:current_user) == [] ? false : true 
+    end 
 
 
 

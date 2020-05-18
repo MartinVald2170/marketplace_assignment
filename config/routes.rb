@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'favourites/update'
   devise_for :users
 get "/", to: "pages#home", as: "route"
 
@@ -14,4 +15,8 @@ get "listings/:id/edit", to: "listings#edit", as: "edit_listing"
 put "listings/:id", to: "listings#update" 
 patch "listings/:id", to: "listings#update"
 delete "listings/:id", to: "listings#destroy" 
+
+resources :conversations do
+  resources :messages
+ end
 end

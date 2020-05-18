@@ -1,3 +1,13 @@
+<h1> Pop Party! </h1> 
+
+<div class="topnav">
+<%= link_to"Home", route_path%>
+  <%= link_to"All Pops For Sale", listings_path%>
+  <%= link_to"Sell Pop", new_listing_path%>
+  <%= link_to"Inbox", conversations_path%>
+</div>
+
+
 
 <%= render "form", listing: @listing %>
  
