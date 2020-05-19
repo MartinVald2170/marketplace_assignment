@@ -13,7 +13,7 @@
 
 <h1><%= @listing.title.capitalize() %></h1>
 <% if @listing.picture.attached? %>
-<% image_tag @listing.picture, style: "width: 200px"%> 
+<%= image_tag @listing.picture, style: "width: 200px"%> 
 <% end %> 
 <br> 
 
