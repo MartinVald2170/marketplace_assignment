@@ -54,10 +54,14 @@ Casual and Hardcore Pop Collectors from around the world
 
 Pop Party! is a 2 sided-marketplace web app built with Ruby on Rails framework with Bootstrap 4 and Postgresql as the database. The MVC architecture is implemented with RoR (model,view,controller). The views contain Ruby and HTML in an .erb file, the models hold the methods used to process the data and the controller uses logic to link the two together.<br>
 
+This allows us to create CRUD operations within the app smoothly such as Create, Read, Update and Destroy
+
 Devise is the Ruby Gem implemented to be able to check whether a user needs to sign up or can login if they have visted before. Within the Ruby code it allows us to check if a user is logged in before using features on their own listings and inbox such as messaging, editing and deleting. <br>
 Users can create a new listing after logging in and have an option to upload an image in png,jpeg or jpg. 
 
 Users are able to enter their inbox to check on currently opened conversations and users who are able to be messaged as their emails being used as a username. This allows the user to ask and asnwer any questions about a listing.
+
+
 ## 2. List and describe any 3rd party services.
 ### Devise : <br>
 Devise is a ruby gem which allows flexible authentication to be established within your app. It does all the heavy work behind the scenes to streamline security and all the work that comes with creating functions for users to login and create a profile which maintains database integrity. Devise also allows the helper method
